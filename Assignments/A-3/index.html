@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f8f9fa;
+    }
+
+    .portfolio {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .portfolio img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .skills {
+      list-style: none;
+      padding: 0;
+    }
+    .skills li {
+      background: #007bff;
+      color: white;
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    .login-form {
+      width: 300px;
+      margin: 0 auto 30px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-form button:hover {
+      background: #0056b3;
+    }
+
+    .product-card {
+      width: 250px;
+      margin-bottom: 30px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+    }
+    .product-card .details {
+      padding: 15px;
+      text-align: center;
+    }
+    .product-card button {
+      background: #28a745;
+      border: none;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .product-card button:hover {
+      background: #218838;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://via.placeholder.com/1200x400");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      padding: 12px 25px;
+      font-size: 16px;
+      background: #ff5733;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background: #c0392b;
+    }
+
+    /* 15. Responsive Layout */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .grid-box {
+      background: #007bff;
+      color: white;
+      padding: 40px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="portfolio">
+    <img src="https://via.placeholder.com/120" alt="Profile">
+    <h2>Vansh Sharma</h2>
+    <p>Frontend Developer | Learner | Tech Enthusiast</p>
+    <h3>Skills</h3>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+    <h3>Contact</h3>
+    <p>Email: vanshsharma7675@gmail.com</p>
+  </div>
+
+
+  <div class="login-form">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom:30px;">
+
+  <div class="product-card">
+    <img src="https://images.samsung.com/is/image/samsung/p6pim/in/f2507/gallery/in-galaxy-watch8-l330-sm-l330nzsains-547660160?$684_547_PNG$" alt="Product">
+    <div class="details">
+      <h3>Smart Watch</h3>
+      <p>Price: ₹ 35,000</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-max-select-202409-blue_FV1?wid=976&hei=916&fmt=jpeg&qlt=90&.v=azQxRkVJKzd6V3J0aGNqWFhLMzBmaVZsckZUTTZZd1pFb3lRTGNlYkF0Yy9BSXRGSWdwVEs0NXdLd3JPRVQ3TGROL2hTdHRlcnVBMFhCNlFSVHgrS01jL2RQeWJYZ1FmWXUzRFBMSzJrTlJTZy9JeUNjV2pzbzd6anYzTldHVWw" alt="Product">
+    <div class="details">
+      <h3>Wireless Headphones</h3>
+      <p>Price: ₹50,000</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/31+IkIfrZGL._SY300_SX300_.jpg" alt="Product">
+    <div class="details">
+      <h3>Gaming Mouse</h3>
+      <p>Price: ₹15,500</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+</div>
+
+  <div class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Build modern and responsive websites with HTML & CSS</p>
+    <button>Get Started</button>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-box">Box 1</div>
+    <div class="grid-box">Box 2</div>
+    <div class="grid-box">Box 3</div>
+    <div class="grid-box">Box 4</div>
+  </div>
+
+</body>
+</html>
