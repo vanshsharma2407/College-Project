@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Programs</title>
+</head>
+<body>
+
+  <script>
+
+
+    let x = 10, y = 20;
+    console.log("6. Before Swap: x=" + x + ", y=" + y);
+    let temp = x;
+    x = y;
+    y = temp;
+    console.log("6. After Swap: x=" + x + ", y=" + y);
+
+ 
+
+
+    let factNum = 5;
+    let factorial = 1;
+    for (let i = 1; i <= factNum; i++) {
+      factorial *= i;
+    }
+    console.log("7. Factorial of " + factNum + " is: " + factorial);
+
+
+
+
+    let tableNum = 7;
+    console.log("8. Multiplication Table of " + tableNum + ":");
+    for (let i = 1; i <= 10; i++) {
+      console.log(tableNum + " x " + i + " = " + (tableNum * i));
+    }
+
+
+
+    let original = 1234;
+    let reversed = 0, tempNum = original;
+    while (tempNum !== 0) {
+      let digit = tempNum % 10;
+      reversed = reversed * 10 + digit;
+      tempNum = Math.floor(tempNum / 10);
+    }
+    console.log("9. Reverse of " + original + " is: " + reversed);
+
+
+
+    let year = 2024;
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+      console.log("10. " + year + " is a Leap Year");
+    } else {
+      console.log("10. " + year + " is NOT a Leap Year");
+    }
+  </script>
+</body>
+</html>
